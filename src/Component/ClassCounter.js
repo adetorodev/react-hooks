@@ -71,13 +71,13 @@ export default function Person() {
     });
   }
   return <div>
-    <lable>Name</lable>
+    <label>Name</label>
     <input value={person.name} onChange={handleName} />
-    <lable>Age</lable>
+    <label>Age</label>
     <input value={person.age} onChange={handleAge} />
-    <lable>Email</lable>
+    <label>Email</label>
     <input value={person.email} onChange={handleEmail} />
-    <lable>Color</lable>
+    <label>Color</label>
     <input value={person.color} onChange={handleColor} />
     <p>
       {person.name} 
