@@ -1,12 +1,13 @@
 // import logo from "./logo.svg";
-import "./App.css";
-import Counter from "./Counter";
+
+import ClassCounter from "./Component/ClassCounter";
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Counter />
+        <ClassCounter />
       </header>
     </div>
   );
