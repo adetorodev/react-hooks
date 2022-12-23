@@ -1,13 +1,16 @@
 // import logo from "./logo.svg";
 
-import ClassCounter from "./Component/ClassCounter";
+import Form from "./Component/ArtWork";
+import Person from "./Component/ClassCounter";
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ClassCounter />
+        <Person />
+        <br />
+        <Form />
       </header>
     </div>
   );
