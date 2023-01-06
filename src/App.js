@@ -9,6 +9,7 @@ import ClassCounterOne from "./useEffectHooks/ClassCounterOne";
 import HookCountOne from "./useEffectHooks/HookCountOne";
 import ClassMouse from "./useEffectHooks/ClassMouse";
 import HookMouse from "./useEffectHooks/HookMouse";
+import MouseContainer from "./useEffectHooks/MouseContainer";
 // import { Nav, Title } from "./Component/book/Chapt1";
 
 const menus = [
@@ -21,7 +22,8 @@ const menus = [
 function App() {
   return (
     <div className="App">
-      <HookMouse />
+      <MouseContainer />
+      {/* <HookMouse /> */}
       {/* <ClassMouse /> */}
       {/* <ClassCounterOne /> */}
       {/* <HookCountOne /> */}
