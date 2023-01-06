@@ -5,6 +5,8 @@ import Form from "./Component/ArtWork";
 import Person from "./Component/ClassCounter";
 import SiteHeader from "./Component/useffHook";
 import { Title } from "./Component/UseEff";
+import ClassCounterOne from "./useEffectHooks/ClassCounterOne";
+import HookCountOne from "./useEffectHooks/HookCountOne";
 // import { Nav, Title } from "./Component/book/Chapt1";
 
 const menus = [
@@ -17,6 +19,8 @@ const menus = [
 function App() {
   return (
     <div className="App">
+      {/* <ClassCounterOne /> */}
+      <HookCountOne />
       {/* <header className="App-header">
         <SiteHeader />
         <Person />
@@ -25,7 +29,7 @@ function App() {
       </header> */}
       {/* <Title /> */}
       {/* <Nav items={menus} selected="home" /> */}
-      <Title text="Click"/>
+      {/* <Title text="Click"/> */}
     </div>
   );
 }
