@@ -7,8 +7,8 @@ function HookCountOne() {
 
     useEffect( () => {
       console.log("Updating document title using useEffect")
-        document.title = `You click ${count}`
-    }, [count])
+        document.title = ` ${name}`
+    }, [name])
 
  
   return (

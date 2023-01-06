@@ -7,6 +7,8 @@ import SiteHeader from "./Component/useffHook";
 import { Title } from "./Component/UseEff";
 import ClassCounterOne from "./useEffectHooks/ClassCounterOne";
 import HookCountOne from "./useEffectHooks/HookCountOne";
+import ClassMouse from "./useEffectHooks/ClassMouse";
+import HookMouse from "./useEffectHooks/HookMouse";
 // import { Nav, Title } from "./Component/book/Chapt1";
 
 const menus = [
@@ -19,8 +21,10 @@ const menus = [
 function App() {
   return (
     <div className="App">
+      <HookMouse />
+      {/* <ClassMouse /> */}
       {/* <ClassCounterOne /> */}
-      <HookCountOne />
+      {/* <HookCountOne /> */}
       {/* <header className="App-header">
         <SiteHeader />
         <Person />
