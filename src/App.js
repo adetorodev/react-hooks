@@ -12,6 +12,7 @@ import HookMouse from "./useEffectHooks/HookMouse";
 import MouseContainer from "./useEffectHooks/MouseContainer";
 import IntervalClassCounter from "./useEffectHooks/IntervalClassCounter";
 import IntervalHookCounter from "./useEffectHooks/IntervalHookCounter";
+import DataFetching from "./useEffectHooks/DataFetching";
 // import { Nav, Title } from "./Component/book/Chapt1";
 
 const menus = [
@@ -24,7 +25,8 @@ const menus = [
 function App() {
   return (
     <div className="App">
-      < IntervalHookCounter />
+      <DataFetching />
+      {/* < IntervalHookCounter /> */}
       {/* <IntervalClassCounter/> */}
       {/* <MouseContainer /> */}
       
