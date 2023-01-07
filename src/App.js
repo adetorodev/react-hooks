@@ -1,6 +1,6 @@
 // import logo from "./logo.svg";
 
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import Form from "./Component/ArtWork";
 import Person from "./Component/ClassCounter";
 import SiteHeader from "./Component/useffHook";
@@ -13,6 +13,7 @@ import MouseContainer from "./useEffectHooks/MouseContainer";
 import IntervalClassCounter from "./useEffectHooks/IntervalClassCounter";
 import IntervalHookCounter from "./useEffectHooks/IntervalHookCounter";
 import DataFetching from "./useEffectHooks/DataFetching";
+import ComponentC from "./useContext/ComponentC";
 // import { Nav, Title } from "./Component/book/Chapt1";
 
 const menus = [
@@ -22,14 +23,23 @@ const menus = [
   { key: "secure", label: "Secure", disabled: true },
 ];
 
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
+
 function App() {
   return (
     <div className="App">
-      <DataFetching />
+      <UserContext.Provider value={"Ezekiel"}>
+        <ChannelContext.Provider value={'ZestDev'}>
+          <ComponentC />
+        </ChannelContext.Provider >
+      </UserContext.Provider>
+
+      {/* <DataFetching /> */}
       {/* < IntervalHookCounter /> */}
       {/* <IntervalClassCounter/> */}
       {/* <MouseContainer /> */}
-      
+
       {/* <HookMouse /> */}
       {/* <ClassMouse /> */}
       {/* <ClassCounterOne /> */}

@@ -4,6 +4,7 @@ import axios from 'axios'
 function DataFetching() {
     const [post, setPost] = useState({})
     const [id, setId] = useState(1)
+    
 
 
     useEffect(() => {
