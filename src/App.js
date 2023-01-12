@@ -3,6 +3,7 @@
 import React, { useEffect, useReducer } from "react";
 import DataFectingOne from "./Reducer/DataFectingOne";
 import DataFetchingTwo from "./Reducer/DataFetchingTwo";
+import ParentComponent from "./useCallback/ParentComponent";
 
 
 
@@ -14,8 +15,9 @@ function App() {
   return (
     
     <div className="App">
+      <ParentComponent />
      {/* <DataFectingOne /> */}
-     <DataFetchingTwo />
+     {/* <DataFetchingTwo /> */}
     </div>
   );
 }
