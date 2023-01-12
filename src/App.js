@@ -14,6 +14,8 @@ import IntervalClassCounter from "./useEffectHooks/IntervalClassCounter";
 import IntervalHookCounter from "./useEffectHooks/IntervalHookCounter";
 import DataFetching from "./useEffectHooks/DataFetching";
 import ComponentC from "./useContext/ComponentC";
+import CounterOne from "./Reducer/CounterOne";
+import CounterTwo from "./Reducer/CounterTwo";
 // import { Nav, Title } from "./Component/book/Chapt1";
 
 const menus = [
@@ -29,11 +31,13 @@ export const ChannelContext = React.createContext();
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={"Ezekiel"}>
+      <CounterTwo />
+      {/* <CounterOne /> */}
+      {/* <UserContext.Provider value={"Ezekiel"}>
         <ChannelContext.Provider value={'ZestDev'}>
           <ComponentC />
         </ChannelContext.Provider >
-      </UserContext.Provider>
+      </UserContext.Provider> */}
 
       {/* <DataFetching /> */}
       {/* < IntervalHookCounter /> */}
