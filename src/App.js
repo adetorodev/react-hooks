@@ -1,8 +1,13 @@
 // import logo from "./logo.svg";
 
 import React from "react";
+import DocTitleOne from "./customHook/DocTitleOne";
+import DocTitleTwo from "./customHook/DocTwo";
+import CounterOne from "./customHook/CounterOne";
+import CounterTwo from "./customHook/CounterTwo";
+import UserForm from "./customHook/UserForm";
 
-import FocuInput from "./useRef/FocuInput";
+
 
 
 
@@ -10,7 +15,11 @@ function App() {
   return (
     
     <div className="App">
-      <FocuInput />
+      <UserForm />
+      <CounterOne />
+      <CounterTwo />
+      {/* <DocTitleOne />
+      <DocTitleTwo /> */}
     </div>
   );
 }
